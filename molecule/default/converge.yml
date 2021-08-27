@@ -4,3 +4,4 @@
   hosts: all
   roles:
     - role: ansible-role-macos-notarization-client
+      mac_notarization_client_url: https://macos-notary-1628249594.s3.amazonaws.com/releases/client/5621db79b05e5929ca4abd4159d39f9ab8b1ad20/macnotary.tgz
