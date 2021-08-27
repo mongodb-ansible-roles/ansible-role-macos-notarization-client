@@ -1,0 +1,5 @@
+---
+mac_notarization_client_dest: /usr/local/bin
+mac_notarization_client_sha: 5621db79b05e5929ca4abd4159d39f9ab8b1ad20
+mac_notarization_client_bin_path: /usr/bin/macnotary
+mac_notarization_client_url: https://macos-notary-1628249594.s3.amazonaws.com/releases/client/{{ mac_notarization_client_sha }}/macnotary.tgz

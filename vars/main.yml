@@ -1,0 +1,2 @@
+---
+mac_notarization_client_creates: "{{ mac_notarization_client_dest }}/macnotary"
