@@ -7,5 +7,5 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts('all')
 
 
-def test_curator(host):
+def test_macnotary(host):
     assert host.file("/usr/local/bin/macnotary").exists
