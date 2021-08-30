@@ -1,0 +1,16 @@
+---
+- name: Download MacOS Notarization Client from {{ mac_notarization_client_url }}
+  unarchive:
+    dest: "{{ mac_notarization_client_dest }}"
+    remote_src: true
+    src: "{{ mac_notarization_client_url }}"
+    creates: "{{ mac_notarization_client_creates }}"
+  become: true
+
+- name: Link curator binary to common places in PATH
+  become: true
+  file:
+    state: link
+    path: "{{ mac_notarization_client_bin_path }}"
+    src: "{{ mac_notarization_client_creates }}"
+  ignore_errors: true
